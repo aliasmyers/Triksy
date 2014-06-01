@@ -5,7 +5,7 @@ PowerShell scripts for processing and aggregating MsTest Trx files.
 
 Author:
 -------
-Graham Stephenson (feedback@brekit.com, http://www.havecomputerwillcode.com)
+Graham Stephenson (feedback@brekit.com, http://www.havecomputerwillcode.com, www.twitter.com/brek_it)
 
 
 Why?
@@ -22,18 +22,23 @@ To install:
 -----------
 Download / clone the repository and drop the files to:
 
-   %USERPROFILE%\Documents\WindowsPOwershell\modules\Triksy
+    %USERPROFILE%\Documents\WindowsPOwershell\modules\Triksy
+
+The Triksy.psm1 file should be in the above folder. 
+
+Alternatively, download the Zip file from the main Repository Screen. Be sure to right click and Unblock the file or the scripts will not run.
 
 Then open a PowerShell instance and type:
- 
-   Import-Module "Triksy"
+
+    Import-Module "Triksy"
 
 You now have access to all of the modules. Help is included along with CmdLets - just type help Get-Trx as an example.
 
 
 Samples:
 --------
-Example 1: Find every Trx file recursively and try to load them (the objects output from this method are piped into the other Trx processing functions later):
+Example 1: 
+Find every Trx file recursively and try to load them (the objects output from this method are piped into the other Trx processing functions later):
 
     Get-Childitem *.trx -Recurse | Get-Trx | Format-Table -Property Exists,Valid,XmlObject,Path -Autosize
 
@@ -55,7 +60,8 @@ Similarly, if the Trx file does not exist, then Exists will be False (only usefu
 XmlObject is the raw [xml] object representing the Trx file. 
 
 
-Example 2: Find every Trx file recursively and produce a summary showing the outcome, tests passed, failed etc:
+Example 2: 
+Find every Trx file recursively and produce a summary showing the outcome, tests passed, failed etc:
 
     Get-ChildItem *.trx -Recurse | Get-TrxSummary | Format-Table -Property Valid,Outcome,Total,Executed,Passed,Error,Failed,Timeout,Aborted,Inconclusive,Path -Autosize
 
@@ -72,7 +78,8 @@ Will produce:
        True Failed    2     2        1      0     1      0       0       0            F:\Github\Triksy\Functions\TestData\...
 
 
-Example 3: Find every Trx file recursively and then aggregate / sum the total number of tests, passed, failed across all files and produce the result in a single object (note the use of the -Aggregate switch):
+Example 3: 
+Find every Trx file recursively and then aggregate / sum the total number of tests, passed, failed across all files and produce the result in a single object (note the use of the -Aggregate switch):
 
     get-childitem *.trx -Recurse | Get-TrxSummary -Aggregate | Format-Table -Property Total,Executed,Passed,Error,Failed,Timeout,Aborted,Inconclusive -Autosize
 
@@ -84,7 +91,8 @@ Will produce:
 
 
 
-Example 4: Get all of the unit tests in an individual trx file:
+Example 4: 
+Get all of the unit tests in an individual trx file:
 
     Get-Trx -Files "Valid\MsTestAttributes.trx" | Get-TrxUnitTest
 
@@ -102,19 +110,22 @@ NOTE: The Execution and TestMethod properties are the raw [Xml] objects from the
 
 
 
-Example 5: Get all of the unit tests in all Trx files recursively:
+Example 5: 
+Get all of the unit tests in all Trx files recursively:
 
     Get-ChildItem *.trx -Recurse | Get-Trx | Get-TrxUnitTest | format-table
 
 
 
-Example 6: Get all of the test results in all Trx files recursively:
+Example 6: 
+Get all of the test results in all Trx files recursively:
 
     Get-ChildItem *.trx -Recurse | Get-Trx | Get-TrxResult | format-table -Property TestName,TestId,Outcome -Autosize
 
 
 
-Example 7: The use of the MsTest [Workitem] attribute is useful for associating a particular test with a given requirement or test case in an ALM or test management tool. This example will process the results and return the Workitem and aggregated outcome for all methods that have the same Workitem id (ie: if any test method with a given Workitem Id is not 'Passed', then the result is Failed):
+Example 7: 
+The use of the MsTest [Workitem] attribute is useful for associating a particular test with a given requirement or test case in an ALM or test management tool. This example will process the results and return the Workitem and aggregated outcome for all methods that have the same Workitem id (ie: if any test method with a given Workitem Id is not 'Passed', then the result is Failed):
 
     Get-ChildItem *.trx -Recurse | Get-Trx | Get-TrxResult | Get-TrxWorkitemSummary
 
