@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1ee405cf-54d9-4be3-8dfb-c46600706737" name="THEUSER@THEMACHINE 2014-05-31 22:45:53" runUser="THEDOMAIN\THEUSER" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="71d2f681-28f1-4c13-99cd-372a3ba98145">
+    <Deployment userDeploymentRoot="F:\Github\Triksy\Functions\VsProjects\MsTestAttributes\MsTestAttributes\bin\Debug" useDefaultDeploymentRoot="false" runDeploymentRoot="THEUSER_THEMACHINE 2014-05-31 22_45_53" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-05-31T22:45:53.0748694-07:00" queuing="2014-05-31T22:45:53.6719035-07:00" start="2014-05-31T22:45:53.8169118-07:00" finish="2014-05-31T22:45:54.6129573-07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="16" executed="16" passed="12" error="0" failed="3" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WorkItemPasses" storage="mstestattributes.dll" id="aa8e8736-ce1b-a9e9-b205-65f9fcfea1d8">
+      <Execution id="5835ffcc-da42-4026-b032-47341c75e695" />
+      <Workitems>
+        <Workitem>2000</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WorkItemPasses" />
+    </UnitTest>
+    <UnitTest name="WithNoProperties" storage="mstestattributes.dll" id="5816b9ab-f414-c69b-68a9-2877bf8085c7">
+      <Execution id="cb2da2b2-ec56-4fbf-9cea-2931c5389c56" />
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheTestProperties, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithNoProperties" />
+    </UnitTest>
+    <UnitTest name="WorkItemAssertion" storage="mstestattributes.dll" id="6a53be14-ca56-15ec-36b9-8978a8a2e4e6">
+      <Execution id="7d6d26d1-46e9-47ee-b587-4994a611db98" />
+      <Workitems>
+        <Workitem>2002</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WorkItemAssertion" />
+    </UnitTest>
+    <UnitTest name="WithOneTestProperty" storage="mstestattributes.dll" id="a3f52ab3-b36c-8b14-8df0-a64e0d519eea">
+      <Execution id="fcd9f794-a189-4e31-9d76-d99214f75512" />
+      <Properties>
+        <Property>
+          <Key>TheTestProperty1</Key>
+          <Value>TheProperty1Value</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheTestProperties, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithOneTestProperty" />
+    </UnitTest>
+    <UnitTest name="WithOneWorkitem" storage="mstestattributes.dll" id="b9c54e0f-7e76-39aa-3d20-599a7f0d0b28">
+      <Execution id="8ff8f381-ff94-48ca-8567-6a045554e636" />
+      <Workitems>
+        <Workitem>1000</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithOneWorkitem" />
+    </UnitTest>
+    <UnitTest name="WithNoWorkitems" storage="mstestattributes.dll" id="e521a611-911a-03e9-e732-feb6a542d86f">
+      <Execution id="5e06d2b1-8c52-4816-915b-05cc3ec0114f" />
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithNoWorkitems" />
+    </UnitTest>
+    <UnitTest name="WithOneCategory" storage="mstestattributes.dll" id="2b722fc8-a131-ec69-f251-49e4c3090943">
+      <TestCategory>
+        <TestCategoryItem TestCategory="TheCategory1" />
+      </TestCategory>
+      <Execution id="5d05695b-9376-46d8-8d86-5980bab68edc" />
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheCategories, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithOneCategory" />
+    </UnitTest>
+    <UnitTest name="WorkItemPassesAndFailsPass" storage="mstestattributes.dll" id="4484815c-be35-8dbd-5151-c79634e96601">
+      <Execution id="1e6f8fec-31d1-4b52-aaa5-175438e5fbe0" />
+      <Workitems>
+        <Workitem>3000</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WorkItemPassesAndFailsPass" />
+    </UnitTest>
+    <UnitTest name="WithTwoCategories" storage="mstestattributes.dll" id="f5b2d3b7-9185-a7df-73c8-4ed358b7f4f3">
+      <TestCategory>
+        <TestCategoryItem TestCategory="TheCategory1" />
+        <TestCategoryItem TestCategory="TheCategory2" />
+      </TestCategory>
+      <Execution id="47b3b2ee-acc7-4252-b548-b541116aacf1" />
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheCategories, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithTwoCategories" />
+    </UnitTest>
+    <UnitTest name="WorkItemFails" storage="mstestattributes.dll" id="db232312-9786-d44f-be91-8bad50169e5f">
+      <Execution id="b70cd8f2-845e-4cb0-bca5-8e70b586b668" />
+      <Workitems>
+        <Workitem>2001</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WorkItemFails" />
+    </UnitTest>
+    <UnitTest name="WorkItemIsInconclusive" storage="mstestattributes.dll" id="fb19334e-6faf-d666-1423-6c02f2a2bb97">
+      <Execution id="f2b97371-52f3-43f1-92d7-f3813501d51a" />
+      <Workitems>
+        <Workitem>4000</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WorkItemIsInconclusive" />
+    </UnitTest>
+    <UnitTest name="WithTwoWorkitemsTheSame" storage="mstestattributes.dll" id="2dc6f58e-e7c1-b848-3669-e656c7aff4d4">
+      <Execution id="91578a46-269c-4240-b620-f56f64372faa" />
+      <Workitems>
+        <Workitem>1000</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithTwoWorkitemsTheSame" />
+    </UnitTest>
+    <UnitTest name="WithTwoWorkitems" storage="mstestattributes.dll" id="47f166be-e4b4-71f6-2659-7cb7bcbef529">
+      <Execution id="b2878a43-7f4e-41d4-a400-859112ea4060" />
+      <Workitems>
+        <Workitem>1001</Workitem>
+        <Workitem>1000</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithTwoWorkitems" />
+    </UnitTest>
+    <UnitTest name="WithTwoTestProperties" storage="mstestattributes.dll" id="eb18c4fa-7f8c-c3ff-e16a-c9e9ac2f75f0">
+      <Execution id="c9bf9ba6-2dba-4648-96a2-d8141d1ad6c5" />
+      <Properties>
+        <Property>
+          <Key>TheTestProperty2</Key>
+          <Value>TheProperty2Value</Value>
+        </Property>
+        <Property>
+          <Key>TheTestProperty1</Key>
+          <Value>TheProperty1Value</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheTestProperties, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithTwoTestProperties" />
+    </UnitTest>
+    <UnitTest name="WithNoCategories" storage="mstestattributes.dll" id="4513f0c2-f3ca-6884-a54e-91bc52a1bc79">
+      <Execution id="999b1fdb-e20c-4f84-b064-53dd0f9304f6" />
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheCategories, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WithNoCategories" />
+    </UnitTest>
+    <UnitTest name="WorkItemPassesAndFailsFail" storage="mstestattributes.dll" id="391929b9-f4f2-853a-9864-7ec0547996d6">
+      <Execution id="776d6d3c-bcd4-4210-aa9d-46bb66e99bf7" />
+      <Workitems>
+        <Workitem>3000</Workitem>
+      </Workitems>
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/Debug/mstestattributes.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestAttributes.TheWorkitems, MsTestAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WorkItemPassesAndFailsFail" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4513f0c2-f3ca-6884-a54e-91bc52a1bc79" executionId="999b1fdb-e20c-4f84-b064-53dd0f9304f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b722fc8-a131-ec69-f251-49e4c3090943" executionId="5d05695b-9376-46d8-8d86-5980bab68edc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f5b2d3b7-9185-a7df-73c8-4ed358b7f4f3" executionId="47b3b2ee-acc7-4252-b548-b541116aacf1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5816b9ab-f414-c69b-68a9-2877bf8085c7" executionId="cb2da2b2-ec56-4fbf-9cea-2931c5389c56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3f52ab3-b36c-8b14-8df0-a64e0d519eea" executionId="fcd9f794-a189-4e31-9d76-d99214f75512" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb18c4fa-7f8c-c3ff-e16a-c9e9ac2f75f0" executionId="c9bf9ba6-2dba-4648-96a2-d8141d1ad6c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e521a611-911a-03e9-e732-feb6a542d86f" executionId="5e06d2b1-8c52-4816-915b-05cc3ec0114f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b9c54e0f-7e76-39aa-3d20-599a7f0d0b28" executionId="8ff8f381-ff94-48ca-8567-6a045554e636" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47f166be-e4b4-71f6-2659-7cb7bcbef529" executionId="b2878a43-7f4e-41d4-a400-859112ea4060" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2dc6f58e-e7c1-b848-3669-e656c7aff4d4" executionId="91578a46-269c-4240-b620-f56f64372faa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a53be14-ca56-15ec-36b9-8978a8a2e4e6" executionId="7d6d26d1-46e9-47ee-b587-4994a611db98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db232312-9786-d44f-be91-8bad50169e5f" executionId="b70cd8f2-845e-4cb0-bca5-8e70b586b668" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb19334e-6faf-d666-1423-6c02f2a2bb97" executionId="f2b97371-52f3-43f1-92d7-f3813501d51a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa8e8736-ce1b-a9e9-b205-65f9fcfea1d8" executionId="5835ffcc-da42-4026-b032-47341c75e695" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="391929b9-f4f2-853a-9864-7ec0547996d6" executionId="776d6d3c-bcd4-4210-aa9d-46bb66e99bf7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4484815c-be35-8dbd-5151-c79634e96601" executionId="1e6f8fec-31d1-4b52-aaa5-175438e5fbe0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="999b1fdb-e20c-4f84-b064-53dd0f9304f6" testId="4513f0c2-f3ca-6884-a54e-91bc52a1bc79" testName="WithNoCategories" computerName="THEMACHINE" duration="00:00:00.0257620" startTime="2014-05-31T22:45:53.8609143-07:00" endTime="2014-05-31T22:45:54.3919447-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="999b1fdb-e20c-4f84-b064-53dd0f9304f6">
+    </UnitTestResult>
+    <UnitTestResult executionId="5d05695b-9376-46d8-8d86-5980bab68edc" testId="2b722fc8-a131-ec69-f251-49e4c3090943" testName="WithOneCategory" computerName="THEMACHINE" duration="00:00:00.0001952" startTime="2014-05-31T22:45:54.3929447-07:00" endTime="2014-05-31T22:45:54.3969450-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d05695b-9376-46d8-8d86-5980bab68edc">
+    </UnitTestResult>
+    <UnitTestResult executionId="47b3b2ee-acc7-4252-b548-b541116aacf1" testId="f5b2d3b7-9185-a7df-73c8-4ed358b7f4f3" testName="WithTwoCategories" computerName="THEMACHINE" duration="00:00:00.0001290" startTime="2014-05-31T22:45:54.3979450-07:00" endTime="2014-05-31T22:45:54.4009452-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47b3b2ee-acc7-4252-b548-b541116aacf1">
+    </UnitTestResult>
+    <UnitTestResult executionId="cb2da2b2-ec56-4fbf-9cea-2931c5389c56" testId="5816b9ab-f414-c69b-68a9-2877bf8085c7" testName="WithNoProperties" computerName="THEMACHINE" duration="00:00:00.0002185" startTime="2014-05-31T22:45:54.4009452-07:00" endTime="2014-05-31T22:45:54.4039454-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb2da2b2-ec56-4fbf-9cea-2931c5389c56">
+    </UnitTestResult>
+    <UnitTestResult executionId="fcd9f794-a189-4e31-9d76-d99214f75512" testId="a3f52ab3-b36c-8b14-8df0-a64e0d519eea" testName="WithOneTestProperty" computerName="THEMACHINE" duration="00:00:00.0001239" startTime="2014-05-31T22:45:54.4049454-07:00" endTime="2014-05-31T22:45:54.4089457-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fcd9f794-a189-4e31-9d76-d99214f75512">
+    </UnitTestResult>
+    <UnitTestResult executionId="c9bf9ba6-2dba-4648-96a2-d8141d1ad6c5" testId="eb18c4fa-7f8c-c3ff-e16a-c9e9ac2f75f0" testName="WithTwoTestProperties" computerName="THEMACHINE" duration="00:00:00.0001204" startTime="2014-05-31T22:45:54.4089457-07:00" endTime="2014-05-31T22:45:54.4119458-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9bf9ba6-2dba-4648-96a2-d8141d1ad6c5">
+    </UnitTestResult>
+    <UnitTestResult executionId="5e06d2b1-8c52-4816-915b-05cc3ec0114f" testId="e521a611-911a-03e9-e732-feb6a542d86f" testName="WithNoWorkitems" computerName="THEMACHINE" duration="00:00:00.0003283" startTime="2014-05-31T22:45:54.4129459-07:00" endTime="2014-05-31T22:45:54.4169461-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e06d2b1-8c52-4816-915b-05cc3ec0114f">
+    </UnitTestResult>
+    <UnitTestResult executionId="8ff8f381-ff94-48ca-8567-6a045554e636" testId="b9c54e0f-7e76-39aa-3d20-599a7f0d0b28" testName="WithOneWorkitem" computerName="THEMACHINE" duration="00:00:00.0001785" startTime="2014-05-31T22:45:54.4179462-07:00" endTime="2014-05-31T22:45:54.4219464-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ff8f381-ff94-48ca-8567-6a045554e636">
+    </UnitTestResult>
+    <UnitTestResult executionId="b2878a43-7f4e-41d4-a400-859112ea4060" testId="47f166be-e4b4-71f6-2659-7cb7bcbef529" testName="WithTwoWorkitems" computerName="THEMACHINE" duration="00:00:00.0001284" startTime="2014-05-31T22:45:54.4229465-07:00" endTime="2014-05-31T22:45:54.4259466-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b2878a43-7f4e-41d4-a400-859112ea4060">
+    </UnitTestResult>
+    <UnitTestResult executionId="91578a46-269c-4240-b620-f56f64372faa" testId="2dc6f58e-e7c1-b848-3669-e656c7aff4d4" testName="WithTwoWorkitemsTheSame" computerName="THEMACHINE" duration="00:00:00.0001193" startTime="2014-05-31T22:45:54.4269467-07:00" endTime="2014-05-31T22:45:54.4299469-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91578a46-269c-4240-b620-f56f64372faa">
+    </UnitTestResult>
+    <UnitTestResult executionId="7d6d26d1-46e9-47ee-b587-4994a611db98" testId="6a53be14-ca56-15ec-36b9-8978a8a2e4e6" testName="WorkItemAssertion" computerName="THEMACHINE" duration="00:00:00.0950047" startTime="2014-05-31T22:45:54.4299469-07:00" endTime="2014-05-31T22:45:54.5299526-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d6d26d1-46e9-47ee-b587-4994a611db98">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </Message>
+          <StackTrace>   at MsTestAttributes.TheWorkitems.WorkItemAssertion() in f:\Github\Triksy\Functions\VsProjects\MsTestAttributes\MsTestAttributes\TheWorkitems.cs:line 53
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b70cd8f2-845e-4cb0-bca5-8e70b586b668" testId="db232312-9786-d44f-be91-8bad50169e5f" testName="WorkItemFails" computerName="THEMACHINE" duration="00:00:00.0023666" startTime="2014-05-31T22:45:54.5309526-07:00" endTime="2014-05-31T22:45:54.5369530-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b70cd8f2-845e-4cb0-bca5-8e70b586b668">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. Fail</Message>
+          <StackTrace>   at MsTestAttributes.TheWorkitems.WorkItemFails() in f:\Github\Triksy\Functions\VsProjects\MsTestAttributes\MsTestAttributes\TheWorkitems.cs:line 46
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2b97371-52f3-43f1-92d7-f3813501d51a" testId="fb19334e-6faf-d666-1423-6c02f2a2bb97" testName="WorkItemIsInconclusive" computerName="THEMACHINE" duration="00:00:00.0009612" startTime="2014-05-31T22:45:54.5379530-07:00" endTime="2014-05-31T22:45:54.5419533-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2b97371-52f3-43f1-92d7-f3813501d51a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. </Message>
+          <StackTrace>   at MsTestAttributes.TheWorkitems.WorkItemIsInconclusive() in f:\Github\Triksy\Functions\VsProjects\MsTestAttributes\MsTestAttributes\TheWorkitems.cs:line 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5835ffcc-da42-4026-b032-47341c75e695" testId="aa8e8736-ce1b-a9e9-b205-65f9fcfea1d8" testName="WorkItemPasses" computerName="THEMACHINE" duration="00:00:00.0001679" startTime="2014-05-31T22:45:54.5429533-07:00" endTime="2014-05-31T22:45:54.5459535-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5835ffcc-da42-4026-b032-47341c75e695">
+    </UnitTestResult>
+    <UnitTestResult executionId="776d6d3c-bcd4-4210-aa9d-46bb66e99bf7" testId="391929b9-f4f2-853a-9864-7ec0547996d6" testName="WorkItemPassesAndFailsFail" computerName="THEMACHINE" duration="00:00:00.0022730" startTime="2014-05-31T22:45:54.5469535-07:00" endTime="2014-05-31T22:45:54.5519538-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="776d6d3c-bcd4-4210-aa9d-46bb66e99bf7">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. Fail</Message>
+          <StackTrace>   at MsTestAttributes.TheWorkitems.WorkItemPassesAndFailsFail() in f:\Github\Triksy\Functions\VsProjects\MsTestAttributes\MsTestAttributes\TheWorkitems.cs:line 68
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1e6f8fec-31d1-4b52-aaa5-175438e5fbe0" testId="4484815c-be35-8dbd-5151-c79634e96601" testName="WorkItemPassesAndFailsPass" computerName="THEMACHINE" duration="00:00:00.0001360" startTime="2014-05-31T22:45:54.5529539-07:00" endTime="2014-05-31T22:45:54.5559541-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e6f8fec-31d1-4b52-aaa5-175438e5fbe0">
+    </UnitTestResult>
+  </Results>
+</TestRun>

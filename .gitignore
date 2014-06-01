@@ -1,0 +1,7 @@
+Functions/VsProjects/MsTestAttributes/MsTestAttributes/bin/
+Functions/VsProjects/MsTestAttributes/MsTestAttributes/obj/
+Functions/VsProjects/MsTestSingleProject/MsTestSingleProject/bin/
+Functions/VsProjects/MsTestSingleProject/MsTestSingleProject/obj/
+Functions/VsProjects/MsTestTwoTests/MsTestTwoTests/bin/
+Functions/VsProjects/MsTestTwoTests/MsTestTwoTests/obj/
+*.suo

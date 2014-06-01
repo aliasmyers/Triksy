@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="16323a75-4655-470f-b988-e86f5bd4615b" name="THEUSER@THEMACHINE 2014-05-31 14:00:19" runUser="THEDOMAIN\THEUSER" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="c307e115-b157-4663-83b7-c820d72d06ac">
+    <Deployment userDeploymentRoot="F:\Github\Triksy\Functions\VsProjects\MsTestTwoTests\MsTestTwoTests\bin\Debug" useDefaultDeploymentRoot="false" runDeploymentRoot="THEUSER_THEMACHINE 2014-05-31 14_00_19" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-05-31T14:00:19.6582611-07:00" queuing="2014-05-31T14:00:20.3142986-07:00" start="2014-05-31T14:00:20.4523065-07:00" finish="2014-05-31T14:00:21.1323454-07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AlwaysPass" storage="mstesttwotests.dll" id="314a4350-bd73-7610-acb0-ed65a4722938">
+      <Execution id="7a37a069-1015-4573-baec-45aad5b9b3ca" />
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestTwoTests/MsTestTwoTests/bin/Debug/mstesttwotests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestTwoTests.UnitTest1, MsTestTwoTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AlwaysPass" />
+    </UnitTest>
+    <UnitTest name="AlwaysFail" storage="mstesttwotests.dll" id="fc878d54-a4e9-0991-83dc-502ccc3c8cf0">
+      <Execution id="e819e6c3-ce66-4abc-bb30-3bd1e5416778" />
+      <TestMethod codeBase="F:/Github/Triksy/Functions/VsProjects/MsTestTwoTests/MsTestTwoTests/bin/Debug/mstesttwotests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MsTestTwoTests.UnitTest1, MsTestTwoTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AlwaysFail" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fc878d54-a4e9-0991-83dc-502ccc3c8cf0" executionId="e819e6c3-ce66-4abc-bb30-3bd1e5416778" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="314a4350-bd73-7610-acb0-ed65a4722938" executionId="7a37a069-1015-4573-baec-45aad5b9b3ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e819e6c3-ce66-4abc-bb30-3bd1e5416778" testId="fc878d54-a4e9-0991-83dc-502ccc3c8cf0" testName="AlwaysFail" computerName="THEMACHINE" duration="00:00:00.0986179" startTime="2014-05-31T14:00:20.5043095-07:00" endTime="2014-05-31T14:00:21.0773423-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e819e6c3-ce66-4abc-bb30-3bd1e5416778">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. Failed</Message>
+          <StackTrace>   at MsTestTwoTests.UnitTest1.AlwaysFail() in f:\Github\Triksy\Functions\VsProjects\MsTestTwoTests\MsTestTwoTests\UnitTest1.cs:line 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7a37a069-1015-4573-baec-45aad5b9b3ca" testId="314a4350-bd73-7610-acb0-ed65a4722938" testName="AlwaysPass" computerName="THEMACHINE" duration="00:00:00.0001851" startTime="2014-05-31T14:00:21.0783423-07:00" endTime="2014-05-31T14:00:21.0803424-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a37a069-1015-4573-baec-45aad5b9b3ca">
+    </UnitTestResult>
+  </Results>
+</TestRun>
